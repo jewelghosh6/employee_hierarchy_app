@@ -1,7 +1,11 @@
 package com.jewel.employee_hierarchy;
 
-import jakarta.persistence.*;
 import lombok.Data;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 @Data
@@ -14,6 +18,7 @@ public class Employee
 
       @Id
       private String empName;
+
 
     @ManyToOne
     @JoinColumn
